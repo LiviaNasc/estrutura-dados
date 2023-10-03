@@ -15,11 +15,7 @@ public class ArrayDinamico {
         return false;
     }
 
-    public static int menorElemento() {
-        if (tamanho == 0) {
-            throw new IllegalStateException("O vetor está vazio.");
-        }
-
+    public static int menorElemento(int[] vetor) {
         int menor = vetor[0];
         for (int i = 1; i < tamanho; i++) {
             if (vetor[i] < menor) {
@@ -29,11 +25,7 @@ public class ArrayDinamico {
         return menor;
     }
 
-    public static int maiorElemento() {
-        if (tamanho == 0) {
-            throw new IllegalStateException("O vetor está vazio.");
-        }
-
+    public static int maiorElemento(int[] vetor) {
         int maior = vetor[0];
         for (int i = 1; i < tamanho; i++) {
             if (vetor[i] > maior) {
