@@ -3,9 +3,9 @@ package algoritmos_ordenacao;
 public class SelectionSort {
     public static void selectionSort(int [] vetor){
         int menorIndice, aux;
-        for(int i=0; i < vetor.length; i++){ //O(N)
+        for(int i = 0; i < vetor.length; i++){
             menorIndice = i;
-            for(int j = i+1; j < vetor.length; j++){ //O(N)
+            for(int j = i + 1; j < vetor.length; j++){
                 if (vetor[j] < vetor[menorIndice]){
                     menorIndice = j;
                 }
